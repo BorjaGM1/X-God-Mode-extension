@@ -1,0 +1,20 @@
+{
+  "name": "X Notifications Tweaks",
+  "version": "1.0",
+  "description": "Adds a bar above the notifications page with toggles for hiding likes and retweets.",
+  "manifest_version": 3,
+  "permissions": [],
+  "host_permissions": [
+    "*://x.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://x.com/notifications/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ]
+}
